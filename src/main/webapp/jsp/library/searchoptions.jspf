@@ -1,0 +1,7 @@
+<select name="searchoptions">
+    <option value="1" selected>Home Tutors</option>
+    <option value="2" selected>Students</option>
+    <option value="3" selected>Tutoring Jobs</option>
+    <option value="4">Tutorial Centers</option>
+   <option value="5">Online Tutors</option> 
+</select>

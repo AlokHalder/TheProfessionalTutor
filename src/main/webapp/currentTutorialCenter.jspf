@@ -1,0 +1,60 @@
+<li><a href='tutorialCenterProfile.do?instituteId=BXV12223'>Institute Of Science</a></li><div><font style='font-size: 10px;color:#05318c;font-weight: bold;padding-left: 30px;'>Kolkata</font> <font style='font-size: 10px;color:#05318c;font-weight: bold;padding-left:15px;'>2011-01-16 </font></div><li><a href='tutorialCenterProfile.do?instituteId=BBJ12344'>RedBery</a></li><div><font style='font-size: 10px;color:#05318c;font-weight: bold;padding-left: 30px;'>Kolkata</font> <font style='font-size: 10px;color:#05318c;font-weight: bold;padding-left:15px;'>2011-01-16 </font></div>      <%--<li>
+    Institute Of Science
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=2222">
+        Scholar Institute
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=333>">
+        Subhas Bose Institute
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=4444">
+        Pioneer Institute
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=5555">
+        TOT SOL  Technology
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=5555">
+        Lohia Business Institute
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=5555">
+        Debashree Institute of Music
+    </a>
+</li>
+<li>
+    <a href="tutorialCenterProfile.do?centerid=5555">
+        Pranab Institute of Music
+    </a>
+</li>
+--%>
+<%--
+<%
+                            List<TutorialCenterDataVO> listOfTutorialCenter = null;
+                            if (null != session.getAttribute("listOfTutorialCenter")) {
+                                listOfTutorialCenter = (List<TutorialCenterDataVO>) session.getAttribute("listOfTutorialCenter");
+                            } else {
+                                listOfTutorialCenter = tutorialCenterModel.populateLimitedListOfTutorialCenter();
+                                session.setAttribute("listOfTutorialCenter", listOfTutorialCenter);
+                            }
+
+                            for (TutorialCenterDataVO tutorialCenterDataVO : listOfTutorialCenter) {
+                %>
+                <li>
+                    <a href="tutorialCenterProfile.do?centerid=<%=tutorialCenterDataVO.getInstituteId()%>">
+                        <%=tutorialCenterDataVO.getInstituteName()%>
+                    </a>
+                </li>
+                <%}%>
+
+--%>

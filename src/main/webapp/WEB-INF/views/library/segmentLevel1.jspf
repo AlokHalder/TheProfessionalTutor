@@ -1,0 +1,31 @@
+<select name="teachingLevel" id="teachingLevel"><option value="-1" selected> Segment/Level </option>
+    <option value="1">Nursery</option>
+    <option value="2">Class I- IV</option>
+    <option value="25">Class V-VII</option>
+    <option value="26">Class VIII-X</option>
+    <option value="3">Class V-X</option>
+    <option value="27">Class IX-X</option>
+    <option value="4">Class XI-XII</option>
+    <option value="5">Graduation</option>
+    <option value="6">Post Graduation</option>
+    <option value="7">JEE/IIT/AIEEE/PMT</option>
+    <option value="8">BCA/MCA</option>
+    <option value="9">BBA/MBA</option>
+    <option value="10">Computer/IT</option>
+    <option value="11">CDS</option>
+    <option value="12">GRE/TOEFL</option>
+    <option value="13">WBCS</option>
+    <option value="14">School Service </option>
+    <option value="15">SSC</option>
+    <option value="16">IAS</option>
+    <option value="17">CAT/MAT</option>
+    <option value="18">Music/Arts</option>
+    <option value="19">Handwriting</option>
+    <option value="20">Yoga/Meditation/AOL</option>
+    <option value="21">Beautician</option>
+    <option value="22">Modeling/Anchoring</option>
+    <option value="23">Call Center Training</option>
+    <option value="24">Sports</option>
+
+
+    <option value="9997">Other</option></select>

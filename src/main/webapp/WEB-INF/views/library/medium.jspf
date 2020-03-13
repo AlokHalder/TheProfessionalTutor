@@ -1,0 +1,14 @@
+<option selected value="Select Medium">-:Select Medium:-</option>
+<option value="English">English</option>
+<option value="Bengali">Bengali</option>
+<option value="Hindi">Hindi</option>
+<option value="Kannada">Kannada</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Tamil">Tamil</option>
+<option value="Telegu">Telegu</option>
+<option value="Punjabi">Punjabi</option>
+<option value="Marathi">Marathi</option>
+<option value="Gujrati">Gujrati</option>
+<option value="Malayalam">Malayalam</option>
+<option value="Oriya">Oriya</option>
+<option value="Other">Other</option>

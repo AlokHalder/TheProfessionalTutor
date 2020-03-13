@@ -1,0 +1,293 @@
+<select name="mainsubject" id="mainsubject">
+    
+    <option value="-1" selected>
+    Subject/Course</option>
+
+<option value="1">All Subjects</option>
+
+
+<option value="2">Bengali</option>
+
+
+<option value="3">English</option>
+
+
+<option value="4">Mathematics</option>
+
+
+<option value="5">Biology</option>
+
+
+<option value="6">History</option>
+
+
+<option value="7">Geography</option>
+
+
+<option value="8">Chemistry</option>
+
+
+<option value="9">Physics</option>
+
+
+<option value="10">Computer</option>
+
+
+<option value="11">Economics</option>
+
+
+<option value="12">Accountancy</option>
+
+
+<option value="13">Statistics</option>
+
+
+<option value="14">Zoology</option>
+
+
+<option value="15">Botany</option>
+
+
+<option value="16">Physiology</option>
+
+
+<option value="17">Bioinformatics</option>
+
+
+<option value="18">MBA-Finance</option>
+
+
+<option value="19">MBA-Marketing</option>
+
+
+<option value="20">Arabic</option>
+
+
+<option value="21">Assamese</option>
+
+
+<option value="22">Burmese</option>
+
+
+<option value="23">Chinese</option>
+
+
+<option value="24">French</option>
+
+
+<option value="25">German</option>
+
+
+<option value="26">Greek</option>
+
+
+<option value="27">Gujrati</option>
+
+
+<option value="28">Gurumukhi</option>
+
+
+<option value="29">Hebrew</option>
+
+
+<option value="30">Hindi</option>
+
+
+<option value="31">Arts Group</option>
+
+
+<option value="32">Science Group</option>
+
+
+<option value="33">Sanskrit</option>
+
+
+<option value="34">Education</option>
+
+
+<option value="35">Career Counseling</option>
+
+
+<option value="36">Rehabilitation Psychology</option>
+
+
+<option value="37">Italian</option>
+
+
+<option value="38">Japanese</option>
+
+
+<option value="39">Khashi</option>
+
+
+<option value="40">Latin</option>
+
+
+<option value="41">Lushai</option>
+
+
+<option value="42">Malayalam</option>
+
+
+<option value="43">Marathi</option>
+
+
+<option value="44">Manipuri</option>
+
+
+<option value="45">Nepali</option>
+
+
+<option value="46">Oriya</option>
+
+
+<option value="47">Pali</option>
+
+
+<option value="48">Persian</option>
+
+
+<option value="49">Russian</option>
+
+
+<option value="50">Tamil</option>
+
+
+<option value="51">Telegu</option>
+
+
+<option value="52">Tibetan</option>
+
+
+<option value="53">Urdu</option>
+
+
+<option value="54">Engineering</option>
+
+
+<option value="55">Analytical Chemistry</option>
+
+
+<option value="56">Anciant India & World History</option>
+
+
+<option value="57">Anthropology</option>
+
+
+<option value="58">Archaeology</option>
+
+
+<option value="59">Defence Studies</option>
+
+
+<option value="60">Draughtsmanship & Surveying</option>
+
+
+<option value="61">Electronics</option>
+
+
+<option value="62">Film Studies</option>
+
+
+<option value="63">Firm Management & Community Development</option>
+
+
+<option value="64">Food & Nutritian</option>
+
+
+<option value="65">Geology</option>
+
+
+<option value="66">Geographics & Meterology</option>
+
+
+<option value="67">Home Science</option>
+
+
+<option value="68">Human Development</option>
+
+
+<option value="69">Industrial Chemistry</option>
+
+
+<option value="70">Industrial Physics</option>
+
+
+<option value="71">International Relationtions</option>
+
+
+<option value="72">Islamic History & Culture</option>
+
+
+<option value="73">Journalism & Mass Communication</option>
+
+
+<option value="74">Laboratory Technicianship</option>
+
+
+<option value="75">Linguistics</option>
+
+
+<option value="76">Microbiology</option>
+
+
+<option value="77">Molicular Biology</option>
+
+
+<option value="78">Museology</option>
+
+
+<option value="79">Music</option>
+
+
+<option value="80">Oceanography</option>
+
+
+<option value="81">Philosophy</option>
+
+
+<option value="82">Political Science</option>
+
+
+<option value="83">Public Administration</option>
+
+
+<option value="84">Social Science</option>
+
+
+<option value="85">Sociology</option>
+
+
+<option value="86">TV & Radio Dervicing</option>
+
+
+<option value="87">Workshop Practice</option>
+
+
+<option value="88">Bio Technology</option>
+
+
+<option value="89">Life Science</option>
+
+
+<option value="90">Chartered Accountants</option>
+
+
+<option value="91">Blue Java</option>
+
+
+<option value="92">ERP</option>
+
+
+<option value="93">Science Group</option>
+
+
+<option value="94">Arts Group</option>
+
+
+<option value="95">Spoken English</option>
+
+
+<option value="9997">Other</option>
+
+</select>

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /image/
+Disallow: /images/
+Disallow: /smallNationalFlags/
+Disallow: /banner_img/
+Disallow: /NationalFlagIcons/
+Disallow: /admin/
+Disallow: /advimages/
+Disallow: /flash/
+Disallow: /actingmodeling/
+Disallow: /advimages/
+Disallow:/crudimage/
+

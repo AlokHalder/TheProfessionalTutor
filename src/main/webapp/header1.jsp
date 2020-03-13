@@ -27,7 +27,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<style>
+<!-- <style>
     .topBar span{ font:13px/30px Verdana, Arial, Helvetica, sans-serif; color:#0F1923; margin-left:3px;}
     .facebook{ background: url(${pageContext.request.contextPath}/images/facebook.png); width: 20px; height: 20px;}
     .topBar{ width:1000px; float:left; height:33px; background:#f5f5f5; border-bottom:1px solid #ccc;}
@@ -42,7 +42,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
     .btn{ background:url(${pageContext.request.contextPath}/images/bt.PNG) no-repeat;width:99px;height:31px; border:none; cursor:pointer}
     .btn:hover{ background:url(${pageContext.request.contextPath}/images/bt_hover.png) no-repeat; cursor:pointer}
     #mainBannerSection1 { width:970px; height:205px; float:left; padding:0; margin: 5px 0px 5px 14px; border: 1px solid #8F8F8F; border-radius: 10px;}
-</style>
+</style> -->
 <!--Body Section Start Here-->
 <div class="topBar">
     <div style="float: left;" >
@@ -71,10 +71,10 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
     <span>|<html:link action="m">Mobile</html:link></span>
         <div class="chatIcon"></div>
     </div>--%>
-    <div style="z-index: 9999999; margin:0px 0px 0px 0px; float: right; width: 234px;" >
+    <!-- <div style="z-index: 9999999; margin:0px 0px 0px 0px; float: right; width: 234px;" >
         
         <div style="float: left;" style="width: 130px;">
-    <div style="z-index: 9999999; margin:6px 0px 0px 5px;" class="fb-like" data-href="https://www.facebook.com/ptutors" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div style="z-index: 9999999; margin:6px 0px 0px 5px;" class="fb-like" data-href="https://www.facebook.com/ptutors" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> -->
     <%-- <span>|Live Chat<img src="images/chat_icon.gif" alt="" title="Add our Skype account 'ptutors' with your Skype account or add Gmail account ptutors@gmail.com & start chat directly with helpdesk." /><span class="hint"><bean:message key="CHAT_HINT_MESSAGE"/><span class="hint-pointer">&nbsp;</span></span>
 
     </span>
@@ -95,10 +95,10 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
 
         <%-- <font color="#800000" id="locvalid" style="font: normal 12px/12px vardana"><%=session.getAttribute("countryName")%>,<%=session.getAttribute("locationName")%></font><font style="font: normal 12px/12px vardana;float: right;color: #800000">Reviewed by <%=session.getAttribute("viewCounter")%> visitors </font> --%>
     </div>
-    <div class="topAddSection">
-        <%--<span><img src="images/add1.gif" alt="Home Tutor Pune" /></span>
+    <%-- <div class="topAddSection">
+        <span><img src="images/add1.gif" alt="Home Tutor Pune" /></span>
         <span><img src="images/add2.gif" alt="Home Tutor Delhi" /></span>      
-        <span><a href="http://www.lnsel.com"><img src="images/lnsel.jpg" alt="Private Tutor Kolkata" width="200px" height="93" /></a></span>--%>
+        <span><a href="http://www.lnsel.com"><img src="images/lnsel.jpg" alt="Private Tutor Kolkata" width="200px" height="93" /></a></span>
 <!--        <span><img src="images/bar_animate.gif" alt="Home Tutor Pune" /></span>-->
 <!--        <span><img src="images/sidebar_img.gif" alt="Home Tutor Delhi" /></span>  -->
 <div style="font-size: 16px; font-family: Arial; font-weight: bold; margin-right: 6px; width: 216px; text-align: right;  color: red;float: left; margin-top: 15px;  line-height: 29px;"> Give Missed Call <br/><strong style="color: #369CFF; font-weight: normal; font-size: 36px;">8335982461</strong> </div>
@@ -107,7 +107,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
           
     </div>
     <div class="clear"></div>
-</div>
+</div> --%>
 
 
 <div  class="search_bg">
@@ -115,17 +115,17 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
         <table border="0" class="search_cot" cellpadding="0" cellspacing="0">
             <tr>
                 <td width="40"  > Find </td>
-                <td width="182" > <%@include file="jsp/library/searchoptions.jspf"%> </td>
+                <td width="182" > <%@include file="WEB-INF/views/library/searchoptions.jspf"%> </td>
                 <td width="19" >In </td>
                 <td width="190" > 
-                    <%@include file="jsp/library/indialocations.jspf"%>
+                    <%@include file="WEB-INF/views/library/indialocations.jspf"%>
 
                 </td>
                 <td width="21" >For</td>
-                <td width="197" >  <%@include file="jsp/library/subject1.jspf"%>   </td>
+                <td width="197" >  <%@include file="WEB-INF/views/library/subject1.jspf"%>   </td>
                 <td width="48" >Of</td>
                 <td width="190" >
-                    <%@include file="jsp/library/segmentLevel1.jspf"%>
+                    <%@include file="WEB-INF/views/library/segmentLevel1.jspf"%>
                 </td>
                 <td width="73" >
                     <input type="submit" class="btn"  value=""/>        
@@ -173,7 +173,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
             
         </div>
     </div>
-    <div class="BannerImg">
+   <%--  <div class="BannerImg">
 
         <div id="gallery" style="z-index: 1">
 
@@ -192,11 +192,11 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
                         <a href="#">
                             <img src="images/edu/banner5.jpg" alt="Home Tutor Noida" width="608" height="205" title=""  rel="<h3>Lotus</h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."/>
                         </a>-->
-            <%--
+            
         <a href="#">
                 <img src="images/edu/banner6.jpg" alt="Mojave" width="608" height="205" title=""  rel="<h3>Mojave</h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."/>
         </a>
-            --%>
+           
             <a href="#">
                 <img src="images/edu/banner_3.png" alt="Maths Tutor Kolkata" width="608" height="205" title=""  rel="<h3>Pier</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
             </a>
@@ -212,7 +212,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
             </a>
 
 
-        </div>
+        </div> --%>
 
     </div>
     <div class="clear"></div>
@@ -331,14 +331,14 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
             <a href="Link.do?method=academicNewsLetter">Auditions</a>
             -->
         </div>
-        <div id="dropmenu7" class="dropmenudiv">
+      <!--   <div id="dropmenu7" class="dropmenudiv">
             <a href="onlineBooks.do">Online Books</a>
             <a href="OnlineJournal.do">Online Journal</a>
             <a href="booksResources.do">Books Resounces</a>
         </div>
 
         <div id="dropmenu8" class="dropmenudiv">
-            <a href="Link.do?method=payment">Payment Options</a>
+            <a href="Link.do?method=payment">Payment Options</a> -->
 <!--            <a href="instantPayment.do">Instant Online Payment</a>-->
             <a href="Link.do?method=upgradeMembership">Upgrade Membership Now</a>
         </div>
@@ -361,17 +361,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
 
         </div>
 
-        <div id="dropmenu10" class="dropmenudiv">
-            <a href="Link.do?method=frequentlyAskedQuestion">FAQ</a>
-            <a href="Link.do?method=howItWorks">How It Works</a>
-            <a href="Link.do?method=feedback">Your Feedback</a>
-            <a href="Link.do?method=assistance">How Can We Assist You?</a>
-            <a href="Link.do?method=referral">Awards/Referral Bonus</a>
-            <a href="Link.do?method=postAdvertisement">Book Your Advertisement</a>
-            <a href="Link.do?method=franchisee">Contact For Franchisee</a>
-            <!--            <a href="Link.do?method=franchisee">Marketing/Advertisement</a>-->
-            <a href="marketing_advertisement.do">Marketing/Advertisement</a>
-        </div>
+       s
         <script type="text/javascript">
             cssdropdown.startchrome("chromemenu");
         </script>
@@ -446,7 +436,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
     </script>
 
 
-    <script>
+    <!-- <script>
 
         function tick(){
             $('#ticker_01 li:first').slideUp( function () { $(this).appendTo($('#ticker_01')).slideDown(); });
@@ -475,11 +465,11 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
             $('#ticker_04 li:first').slideUp( function () { $(this).appendTo($('#ticker_04')).slideDown(); });
         }
 
-
+ -->
         /**
          * USE TWITTER DATA
          */
-
+<!-- 
         $.ajax ({
             url: '#',
             data: 'q=%23javascript',
@@ -507,7 +497,7 @@ window.open("http://basicchatapplication.pcsglobal.cloudbees.net/jsp/ChatWindow.
         });
 
 
-    </script>
+    </script> -->
 
 </div>
 

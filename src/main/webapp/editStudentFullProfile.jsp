@@ -211,7 +211,7 @@
                 </div>
                 <div>
                     <html:select  property="secretQuestion" styleClass="registrationTextField" title="Please select secret question. It will required to retrieve lost password ">
-                        <%@ include file = "/jsp/library/secretQuestion.jspf"  %>
+                        <%@ include file = "WEB-INF/views/library/secretQuestion.jspf"  %>
                     </html:select>
                 </div>
                 <div class="clear"></div>
@@ -256,7 +256,7 @@
                 </div>
                 <div>
                     <html:select  property="age" styleClass="registrationTextField">
-                        <%@ include file = "/jsp/library/ageSelection.jspf"  %>
+                        <%@ include file = "WEB-INF/views/library/ageSelection.jspf"  %>
                     </html:select>
                 </div>
                 <div class="errorField">

@@ -69,7 +69,7 @@
                  <table>
                     <tr>
                         <td>India :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td> <%@include file="jsp/library/indialocations.jspf" %></td>
+                        <td> <%@include file="WEB-INF/views/library/indialocations.jspf" %></td>
                     </tr>
                  <%--   <tr>
                         <td>Overseas :</td>

@@ -1,5 +1,8 @@
 <%@page import="java.sql.*" %>
 
+
+searchResultMenu.jsp
+
 <%
 try{
       Class.forName("com.mysql.jdbc.Driver"); 

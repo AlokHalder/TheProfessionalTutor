@@ -112,17 +112,17 @@
         <table border="0" class="search_cot" cellpadding="0" cellspacing="0">
             <tr>
                 <td width="40"  > Find </td>
-                <td width="182" > <%@include file="jsp/library/searchoptions.jspf"%> </td>
+                <td width="182" > <%@include file="WEB-INF/views/library/searchoptions.jspf"%> </td>
                 <td width="19" >In </td>
                 <td width="190" > 
-                    <%@include file="jsp/library/indialocations.jspf"%>
+                    <%@include file="WEB-INF/views/library/indialocations.jspf"%>
 
                 </td>
                 <td width="21" >For</td>
-                <td width="197" >  <%@include file="jsp/library/subject1.jspf"%>   </td>
+                <td width="197" >  <%@include file="WEB-INF/views/library/subject1.jspf"%>   </td>
                 <td width="48" >Of</td>
                 <td width="190" >
-                    <%@include file="jsp/library/segmentLevel1.jspf"%>
+                    <%@include file="WEB-INF/views/library/segmentLevel1.jspf"%>
                 </td>
                 <td width="73" >
                     <input type="submit" class="btn"  value=""/>        

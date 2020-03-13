@@ -1,0 +1,50 @@
+<div class="ourToutorWrapper">
+    <div class="tutorHeader">View successful Tutors &amp; Students &amp; Institutes Gallary</div>
+    <div class="tutorBoxBody">
+        <div class="imageWrapperTutor" style="margin-left:25px; margin-top:20px;">
+            <div class="tutorImg">
+                <a href="resentRegisteredTutors.do"><img src="images/manasi.jpg" alt="" /></a>
+            </div>
+            <div class="tutorname">
+                <a href="resentRegisteredTutors.do" style="text-decoration: none;font: normal 13px/20px Arial, Helvetica; color:#000;font-weight: bold">J1234</a>
+                </div>
+            <div class="viewMore">
+               <a href="resentRegisteredTutors.do"><img src="images/view_profile_button.gif" alt="" /></a>
+            </div>
+        </div>
+        <div class="imageWrapperTutor" style="margin-left:20px; margin-top:20px;">
+            <div class="tutorImg">
+                <a href="resentRegisteredTutors.do"><img src="images/raj.jpg" alt="" /></a>
+            </div>
+             <div class="tutorname">
+                 <a href="resentRegisteredTutors.do" style="text-decoration: none;font: normal 13px/20px Arial, Helvetica; color:#000;font-weight: bold">P1234</a>
+             </div>
+            <div class="viewMore">
+                <a href="resentRegisteredTutors.do"><img src="images/view_profile_button.gif" alt="" /></a>
+            </div>
+        </div>
+        <div class="imageWrapperTutor" style="margin-left:20px; margin-top:20px;">
+            <div class="tutorImg">
+                <a href="viewResentRegisteredStudents.do"><img src="images/tutor_img_3.gif" alt="" /></a>
+            </div>
+             <div class="tutorname">
+                  <a href="viewResentRegisteredStudents.do" style="text-decoration: none;font: normal 13px/20px Arial, Helvetica; color:#000;font-weight: bold">W1234</a>
+              </div>
+            <div class="viewMore">
+               <a href="viewResentRegisteredStudents.do"><img src="images/view_profile_button.gif" alt="" /></a>
+            </div>
+        </div>
+        <div class="imageWrapperTutor" style="margin-left:20px; margin-top:20px;">
+            <div class="tutorImg">
+                <a href="viewResentRegisteredStudents.do"><img src="images/institutes.jpg" alt="" /></a>
+            </div>
+             <div class="tutorname">
+                 <a href="viewResentRegisteredStudents.do" style="text-decoration: none;font: normal 13px/20px Arial, Helvetica; color:#000;font-weight: bold">X1234</a>
+                </div>
+            <div class="viewMore">
+                <a href="viewResentRegisteredStudents.do"><img src="images/view_profile_button.gif" alt="" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="tutorBoxBottom"><img src="images/welcome_bottom.gif" alt="" /></div>
+</div>

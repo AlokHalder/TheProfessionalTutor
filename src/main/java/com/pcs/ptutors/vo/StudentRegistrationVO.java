@@ -2,6 +2,8 @@ package com.pcs.ptutors.vo;
 
 import java.io.Serializable;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 /**
  *
  * @author ibm
@@ -12,6 +14,7 @@ public class StudentRegistrationVO implements Serializable {
     private String userLoginName;
     private String password;
     private String secretQuestion;
+    @NotEmpty
     private String secretQuestionAnswer;
     private String studentId;
     private String name;

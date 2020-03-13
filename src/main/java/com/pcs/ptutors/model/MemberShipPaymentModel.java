@@ -25,7 +25,7 @@ import java.util.ResourceBundle;
  */
 public class MemberShipPaymentModel {
 
-    private static final String propdest = "com.tutors.properties.validation";
+    private static final String propdest = "com.pcs.ptutors.properties.validation";
     private static ResourceBundle resource = ResourceBundle.getBundle(propdest);
 
     /**

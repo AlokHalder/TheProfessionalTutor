@@ -17,7 +17,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-import com.pcs.ptutors.model.DbConnectionPool;
 
 /**
  *
@@ -25,7 +24,7 @@ import com.pcs.ptutors.model.DbConnectionPool;
  */
 public class TutorialCenterModel {
 
-    ResourceBundle resourceBundle = ResourceBundle.getBundle("com.pcs.ptutors.properties.professionaltutorsSQL");
+    ResourceBundle resourceBundle = ResourceBundle.getBundle("com.tutors.properties.professionaltutorsSQL");
     String message = null;
 
     /**
@@ -44,7 +43,7 @@ public class TutorialCenterModel {
             try {
                 DbConnection dbConnection = new DbConnection();
                 conn = dbConnection.dbConnect();
-                
+
 
                 //String sqlQueryPart = "select institute_id,institute_login_password  from tutorial_center where institute_id =? and institute_login_password=?";
                 StringBuffer sqlQueryPart = new StringBuffer("select institute_login_name,institute_id,institute_login_password,INSTITUTE_FULL_NAME  from tutorial_center where");
@@ -434,7 +433,7 @@ public class TutorialCenterModel {
         try {
 
 
-            if ( conn==null) {
+            if (null == conn) {
                 conn = DbConnectionPool.dbConnectThree();
             }
 

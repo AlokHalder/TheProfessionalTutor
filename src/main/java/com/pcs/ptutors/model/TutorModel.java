@@ -1,3 +1,4 @@
+
 package com.pcs.ptutors.model;
 
 import com.pcs.ptutors.vo.EmployeeRegistrationVo;
@@ -18,6 +19,7 @@ import com.pcs.ptutors.vo.InstantTutorServiceVO;
 import com.pcs.ptutors.vo.ListOfValuesVO;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -38,6 +40,11 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 import java.util.StringTokenizer;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+
 
 /**
  *
@@ -148,8 +155,7 @@ public class TutorModel {
             }
 
 
-
-
+            
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
         } catch (Exception exception) {
@@ -291,6 +297,26 @@ public class TutorModel {
         return listOfTeaser;
     }
 
+	/*
+	 * public ResultVO studentRegistrationcheck(StudentRegistrationVO
+	 * studentRegistrationVO) throws Exception, ProfessionalTutorsException {
+	 * Connection conn = null; PreparedStatement pst = null; ResultVO resultVO = new
+	 * ResultVO();
+	 * 
+	 * 
+	 * try{ Class.forName("com.mysql.jdbc.Driver"); Connection con =(Connection)
+	 * DriverManager.getConnection("jdbc:mysql://localhost:3306/taxi", "root", "");
+	 * PreparedStatement ps = con.prepareStatement("SELECT  * FROM users WHERE " +
+	 * "username = ?"); ps.setString(1,request.getParameter("username")); ResultSet
+	 * res = ps.executeQuery(); if(res.first()){ out.print("User already exists");
+	 * }else{ out.print("User name is valid"); } }catch (Exception e){
+	 * System.out.println(e); }
+	 * 
+	 * 
+	 * 
+	 * }
+	 */
+        
     /**
      *
      * @param view
@@ -454,6 +480,8 @@ public class TutorModel {
         return resultVO;
     }
 
+    
+    
     /**
      *
      * @param tutorRegistrationVO
@@ -2914,6 +2942,7 @@ public class TutorModel {
 
             String sqlQuery = "select count(*) as user_name from student_details where user_login_name = '" + userLoginName + "'";
 
+            System.out.println("check avivlbility methode called");
             st = conn.createStatement();
             rs = st.executeQuery(sqlQuery);
 

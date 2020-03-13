@@ -236,7 +236,7 @@ public class DbConnectionPool {
 
         try {
             Class.forName(resource.getString(ProfessionalTutorsConstant.DRIVER_NAME));
-            conn = DriverManager.getConnection(resource.getString(ProfessionalTutorsConstant.DRIVER_URL));
+           conn = DriverManager.getConnection(resource.getString(ProfessionalTutorsConstant.DRIVER_URL));
             counter++;
             System.out.println(" Connection Counter ");
         } catch (Exception e) {

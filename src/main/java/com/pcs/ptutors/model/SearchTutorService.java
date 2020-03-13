@@ -7,7 +7,7 @@ package com.pcs.ptutors.model;
 import com.pcs.ptutors.exception.ProfessionalTutorsException;
 import com.pcs.ptutors.constant.ProfessionalTutorsConstant;
 import com.pcs.ptutors.vo.SearchResultVO;
-import com.pcs.ptutors.vo.SearchVO;
+import com.pcs.ptutors.vo.SearchVOO;
 import com.pcs.ptutors.util.DateConversion;
 import com.pcs.ptutors.vo.TutorRegistrationVO;
 import java.sql.Connection;
@@ -1181,7 +1181,7 @@ public class SearchTutorService {
            return listOfTutorSearchResult;
       }
      
-     public int getAllTutorCountSearch(SearchVO searchVO) {
+     public int getAllTutorCountSearch(SearchVOO searchVO) {
         int totalTutorCountSearch = 0;
         String searchInLocation = searchVO.getTutorCityLocation();
         System.out.println("location in servce...." + searchInLocation);

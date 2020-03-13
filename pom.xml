@@ -1,21 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+
+	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"><modelVersion>4.0.0</modelVersion>
 	<groupId>com.pcs.ptutors</groupId>
 	<artifactId>Ptutors</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Ptutors</name>
+	
+	 <properties>
+        <version.commons-io>2.4</version.commons-io>
+    </properties>
 
+ 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
@@ -23,6 +20,13 @@
 			<artifactId>spring-core</artifactId>
 			<version>5.1.1.RELEASE</version>
 		</dependency>
+		
+	     <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${version.commons-io}</version>
+        </dependency>
+        
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -48,13 +52,55 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
+		
+		
+		                                                                                                                                                                                                        <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-struts</artifactId>
+    <version>2.0.8</version>
+		</dependency> 
+		 
+		<!-- 		<dependency>
+
+	<groupId>org.apache.struts</groupId>
+	<artifactId>struts2-convention-plugin</artifactId>
+	<version>2.5.20|</version>
+	
+		</dependency>
+
+		<dependency>
+
+	<groupId>org.apache.struts</groupId>
+	<artifactId>struts2-spring-plugin</artifactId>
+	<version>2.5.20</version>
+	
+		</dependency> --> 
+		
+		
+		
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
+<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>jstl-api</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jstl-impl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		 
 
 		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
 		<dependency>
@@ -63,7 +109,11 @@
 			<version>1.6.2</version>
 		</dependency>
 
-
+<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 
 
 
@@ -94,8 +144,42 @@
 		</dependency>
 
 
-	</dependencies>
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>20.0</version>
+</dependency>
 
+     <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+     <dependency>
+       <groupId>javax.validation</groupId>
+       <artifactId>validation-api</artifactId>
+       <version>2.0.1.Final</version>
+     </dependency>
+
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.0.3.Final</version>
+		</dependency>
+
+	</dependencies>
+<build>
+		 <plugins>
+		  
+  <plugin>
+     <configuration>
+        
+        <finalName>username-availability</finalName>                
+    </configuration>
+      </plugin>
+  </plugins>
+	 
+	</build>
 
 
 </project>
+<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	 -->

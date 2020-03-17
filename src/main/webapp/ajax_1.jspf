@@ -1,0 +1,93 @@
+
+         <SCRIPT LANGUAGE="javascript">
+       var req=false;
+      function initialize()
+      {
+        if(window.XMLHttpRequest)
+         {
+          req=new XMLHttpRequest();
+          }
+          else if(window.ActiveXObject)
+          {
+           req=new ActiveXObject("Microsoft.XMLHTTP");
+           }
+          }
+        function populateCity()
+        {
+
+            initialize();
+            var countryCode=document.getElementById('country').value;
+            alert(" countryCode : " + countryCode);
+            var url="SelectData.jsp?countryCode="+countryCode;
+            if(req!=null)
+            {
+                req.open("GET",url,true);
+                req.onreadystatechange=process;
+                req.send(null);
+            }
+         }
+         function process()
+         {
+          if(req.readyState==4)
+          {
+            if(req.status==200)
+            {
+             var cities = req.responseText.split(',');
+		 cname.options.length = 0; //clear all options
+		 for(i=0;i<cities.length-1;i++)
+		 {
+			var city = cities[i].split('~');
+			cname.options[cname.options.length] = new Option(city[1], city[0])
+		 }
+		}
+
+         }
+	 }
+
+          function populateLocationId(){
+
+                var locationId =document.getElementById('cname').value;
+                alert( " locationId : " + locationId);
+                //  Value is coming at this end  ..but now we need to store this location id into a session
+               var urlVal="AjaxServlet?locationId="+locationId;
+
+            if(req!=null)
+            {
+                req.open("GET",urlVal,true);
+                req.onreadystatechange = populateCity;
+                req.send(null);
+            }
+
+
+          }
+
+  </SCRIPT>
+    </head>
+     <body>
+    <form name="f1">
+        <table >
+            <tr>
+                <td>State</td>
+                <td><td width="144"><select name="country" onchange="populateCity()" id="country">
+                        <option value="0">-----Select State name--------</option>
+                        <option value="IND">India</option>
+                        <option value="BNG">Bangaladesh</option>
+                        <option value="AFG">Afganistan</option>
+
+                </select></td>
+
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                <td width="144">
+                    <select name="cname" id="cname">
+                        <option value="-1">-:Select Location :-</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+      
+Location Id  :: <%=request.getSession().getAttribute("locationId")%>

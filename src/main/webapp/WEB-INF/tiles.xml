@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="header_1" value="/WEB-INF/views/header_1.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	<definition name="contact" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/views/contact.jsp" />
+	</definition>
+
+	<definition name="helloGovind" extends="base.definition">
+		<put-attribute name="title" value="Tutor Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorProfileRegistration.jsp" />
+	</definition>
+	<definition name="helloPriya" extends="base.definition">
+		<put-attribute name="title" value="Tutor Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/studentRegistration.jsp" />
+	</definition>
+	
+	<definition name="helloStudentmamber" extends="base.definition">
+		<put-attribute name="title" value="Tutor Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/studentRegistration.jsp" />
+	</definition>
+	<definition name="index" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/indexmenu.jsp" />
+	</definition>
+	
+	<definition name="indexs" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorsBenefits.jsp" />
+	</definition>
+	
+	<definition name="indexss" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/eduAndTeachingProcedureRegn.jsp" />
+	</definition>
+	
+	<definition name="helloStudentmamber" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/MemberShipPaymentModels.jsp" />
+	</definition>
+	
+	<definition name="helloPriyas" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		
+		<put-attribute name="body" value="/WEB-INF/views/studentUpgradeMembershipAndPayment.jsp" />
+		
+	</definition>
+	<definition name="helloPost" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/postTutionRequirementss.jsp" />
+	</definition>
+	
+	<definition name="helloPostt" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/postTutionRequirementSuccess.jsp" />
+	</definition>
+	
+	<definition name="indexsande" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/studentBenefits.jsp" />
+	</definition>
+	
+	<definition name="helloUser" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+	</definition>
+	
+	<definition name="helloHome" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/homeworkhelp.jsp" />
+	</definition>
+	<definition name="indexw" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/header1.jsp" />
+	</definition>
+	
+	
+	<definition name="modelwaswearch" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/header.jsp" />
+	</definition>
+	
+	<definition name="helloPrivi" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorTutoringProcedure.jsp" />
+	</definition>
+	
+	<definition name="helloTutor" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorCompleteRegistration.jsp" />
+	</definition>
+	
+	<definition name="helloUpgradeTutor" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorUpgradeMembershipAndPayment.jsp" />
+	</definition>
+	
+	<definition name="helloPrivii" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorMembershipAndsubcription.jsp" />
+	</definition>
+	
+	<definition name="index1" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorMembershipAndsubcription.jsp" />
+	</definition>
+	
+	<definition name="eduandteaching" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/eduAndTeachingProcedureRegn.jsp" />
+	</definition>
+	
+	<definition name="tutorProfileById" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorProfileByid.jsp" />
+	</definition>
+ 
+</tiles-definitions>  

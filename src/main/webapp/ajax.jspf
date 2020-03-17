@@ -1,0 +1,105 @@
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+
+         <SCRIPT LANGUAGE="javascript">
+       var req=false;
+      function initialize()
+      {
+        if(window.XMLHttpRequest)
+         {
+          req=new XMLHttpRequest();
+          }
+          else if(window.ActiveXObject)
+          {
+           req=new ActiveXObject("Microsoft.XMLHTTP");
+           }
+          }
+        function populateCity()
+        {
+
+            initialize();
+
+            var countryCode=document.getElementById('country').value;
+            alert(" countryCode : " + countryCode);
+            var url="SelectData.jsp?countryCode="+countryCode;
+            if(req!=null)
+            {
+                alert("Here");
+                req.open("GET",url,true);
+                req.send(null);
+                 var cities = req.responseText.split(',');
+		 cname.options.length = 0; //clear all options
+                 alert("cities.length : " + cities.length);
+		 for(i=0;i<cities.length-1;i++)
+		 {
+			var city = cities[i].split('~');
+			cname.options[cname.options.length] = new Option(city[1], city[0])
+		 }
+
+                //req.onreadystatechange=process;
+                //req.send(null);
+            }
+         }
+         function process()
+         {
+             alert("I am here ...." + req.responseText);
+        /*  if(req.readyState==4)
+          {
+            if(req.status==200)
+            {*/
+             var cities = req.responseText.split(',');
+		 cname.options.length = 0; //clear all options
+                 alert("cities.length : " + cities.length);
+		 for(i=0;i<cities.length-1;i++)
+		 {
+			var city = cities[i].split('~');
+			cname.options[cname.options.length] = new Option(city[1], city[0])
+		 }
+		//}
+
+       //  }
+	 }
+
+        
+
+  </SCRIPT>
+    </head>
+     <body>
+    <form name="f1">
+        <table >
+            <tr>
+                <td>State</td>
+                <td><td width="144"><select name="country" onchange="populateCity()" id="country">
+                        <option value="0">-----Select State name--------</option>
+                        <option value="IND">India</option>
+                        <option value="BNG">Bangaladesh</option>
+                        <option value="AFG">Afganistan</option>
+
+                </select></td>
+
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                <td width="144">
+                    <select name="cname" id="cname">
+                        <option value="-1">-:Select Location :-</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+      </form>
+
+
+
+    </body>
+</html>
+Location Id  :: <%=request.getSession().getAttribute("locationId")%>
